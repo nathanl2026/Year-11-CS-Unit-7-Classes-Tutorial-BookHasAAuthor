@@ -18,7 +18,9 @@ Define a class that is composed of an already existing class
 
 Composition
 
-Composition means to design a class that is composed of already defined classes. This creates a relationship referred to as a “has-a” relationship, where one class contains a reference to another. An example would be if we defined two classes: Person and Address. A Person “has-a” Address. In the Person class we would include a property called address of type Address.
+Composition means to design a class that is composed of already defined classes. This creates a relationship referred to as a “has-a” relationship, 
+where one class contains a reference to another. An example would be if we defined two classes: Person and Address. A Person “has-a” Address. 
+In the Person class we would include a property called address(name of property) of type Address.
 
 public class Person {
 
@@ -42,7 +44,10 @@ public class Address {
 
 UML
 
-Unified Modeling Language is not a programming language that we use to write code, such as Java, but a standardized way to visualize the design of a system. In OOP, we build objects from classes. Objects interact with other objects and thus, have relationships with other objects. UML is a great tool for the design stage, allowing us to rationalize what a class will look like and how it will be related to other classes. Take a look at the example below.
+Unified Modeling Language is not a programming language that we use to write code, such as Java, but a standardized way to visualize the design of a system. 
+In OOP, we build objects from classes. Objects interact with other objects and thus, have relationships with other objects. 
+UML is a great tool for the design stage, allowing us to rationalize what a class will look like and how it will be related to other classes. 
+Take a look at the example below.
 
 ![image](https://user-images.githubusercontent.com/57818506/213328428-b695ded1-6dc1-4746-b396-45f2d1d1ffcd.png)
 
@@ -69,8 +74,14 @@ Let’s move our attention to the Point class.
 
 The Point class consists of two private properties called x and y. 
 The Point class does not have any behavior (methods).
-What’s important to note here is that there is a line with a diamond extending from the Point class to the Line class. This indicates that there is a relationship between the two classes. The inclusion and direction of the diamond indicate that any Line object created will contain a Point object as a property. We typically phrase this as a “has-a” relationship. A Line has a Point. Or, perhaps more correctly, a Line has two Points! This makes sense because the begin and end properties in the Line class are both of type Point. In this situation, Line can be referred to as the aggregate and Point can be referred to as the component.
-You might be interested in knowing what the significance of the two numbers (1 and 2) is. The number 2 indicates that any object of type Line is associated with 2 objects of type Point. The number 1 indicates that any object of type Point is associated with 1 object of type Line. It’s also a one-way relationship, meaning that any Line object will know of the Point objects which it is associated with but the Point object will not know of the Line object which it is associated with. 
+What’s important to note here is that there is a line with a diamond extending from the Point class to the Line class. This indicates that there is a 
+relationship between the two classes. The inclusion and direction of the diamond indicate that any Line object created will contain a Point object as a property. 
+We typically phrase this as a “has-a” relationship. A Line has a Point. Or, perhaps more correctly, a Line has two Points! This makes sense because the begin and 
+end properties in the Line class are both of type Point. In this situation, Line can be referred to as the aggregate and Point can be referred to as the component.
+You might be interested in knowing what the significance of the two numbers (1 and 2) is. The number 2 indicates that any object of type Line is associated 
+with 2 objects of type Point. The number 1 indicates that any object of type Point is associated with 1 object of type Line. It’s also a one-way relationship, 
+meaning that any Line object will know of the Point objects which it is associated with but the Point object will not know of the Line object which it is 
+associated with. 
 
 
 Part 1
